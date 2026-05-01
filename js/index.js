@@ -1,15 +1,15 @@
 const title = document.querySelector('.title')
-const text = 'Hi, Halston!'.split('')
+const text = 'Happy 4th Monthsary, Istriku'.split('')
 for (let index = 0; index < text.length; index++) {
   if (text[index] !== ' ') {
     title.innerHTML += `<span>${text[index]}<span/>`
   } else {
-    title.innerHTML += `<span style='margin-right: 20px;'><span/>`
+    title.innerHTML += `<span style='margin-right: 25px;'><span/>`
   }
 }
 
 const textElements = document.querySelectorAll('.title span');
 textElements.forEach((element) => {
-  const randomDelay = Math.random() * 3; // Menghasilkan delay acak antara 0 hingga 3 detik
+  const randomDelay = Math.random() * 5; // Menghasilkan delay acak antara 0 hingga 3 detik
   element.style.animationDelay = `${randomDelay}s`;
 });
